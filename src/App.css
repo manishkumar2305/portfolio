@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  a {
+    @apply cursor-pointer;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-white w-fit px-4 py-2.5 text-primaryColor tracking-wider text-base font-secondaryFont font-[600] rounded-md hover:bg-primaryColor hover:text-white transition duration-[600ms] ease-in-out;
+  }
+
+  .container {
+    @apply lg:w-[80%] w-[92%] mx-auto;
+  }
+
+  .active {
+    @apply text-primaryColor
+  }
+}
